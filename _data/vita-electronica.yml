@@ -1,0 +1,57 @@
+- componente: Arduino UNO
+  imagen: img/elec-arduino.jpg
+  cantidad: 1
+  descripcion:
+      O "cerebro" da nosa máquina
+                        Podr&aacute;s utilizar cualquier tipo de Arduino que tenga al menos siete salidas digitales (3 de ellas pwm).
+
+- componente: CNC Shield
+  imagen: img/elec-030-shield.jpg
+  cantidad: 1
+  descripcion: Facilita a conexion de drivers e conectores dos motores
+
+- componente: Motor paso a paso
+  imagen: img/elec-motor.jpg
+  cantidad: 3
+  descripcion: O Nema-17. Un clásico no mundo maker.
+
+- componente: Driver motor
+  imagen: img/elec-driver.jpg
+  cantidad: 1
+  descripcion: Necesitamos 3 drivers A4988. No mundo da impresión 3D, tamén se coñecen como "pololus"
+
+- componente: Facer foto e buscar referencias
+  imagen: img/elec-pinchos.jpg
+  cantidad: 1
+  descripcion: 
+      <ol>
+      <li>Correa</li>
+      <li>Poleas 20 dentes - 3</li>
+      <li>Poleas 20 dentes síncronas - 6</li>
+      <li>Rodas 30</li>
+      <li>Espaciadores  15</li>
+      <li>Excéntricas - 15</li>
+      <li>Chapas acero - 1</li>
+      <li>Cadeneta</li>
+      <li>Cableado</li>
+      <li>Gslot 420mm 4</li>
+      <li>Gslot 391.20mm 4</li>
+      <li>Husillos Tr8x8 410mm - 2</li>
+      <li>Husillos Tr8x8 375 mm - 1</li>
+      <li>Tornillos:</li>
+      <li>M2,5x10mm - 8</li>
+      <li>M3x8mm - 22</li>
+      <li>M3x30mm 4</li>
+      <li>M4x16mm - 8</li>
+      <li>M5x10mm - 17</li>
+      <li>M5x30mm - 13</li>
+      <li>Arandelas M5</li>
+      <li>Porca M5 Latón - 2 - decir o do material para facilitar o deslizamento</li>
+      <li>Porcas autoblocantes M5 - 13</li>
+      <li>Separador Nylon 6mm - 8</li>
+
+
+
+
+
+

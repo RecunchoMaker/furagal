@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h2>Parte mec&aacute;nica</h2>
+
+
+{% for fila in site.data.mecanica %}
+<div class="row">
+    <div class="col-sm-6">
+        <img src="{{ fila.foto }}" class="img-thumbnail" alt="Responsive image">
+    </div>
+    <div class="col-sm-6">
+        <h4>{{ fila.titulo }}</h4>
+        {{ fila.texto }}
+        </p>
+    </div>
+</div>
+{% endfor %}

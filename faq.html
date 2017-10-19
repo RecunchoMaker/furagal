@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="page-header ">
+    <h1 class="text-center">FAQ <br><small>Frequently Asked Questions</small></h1>
+</div>
+
+<div class="panel-group" id="accordion">
+{% assign secuencia = '0' %}
+{% for fila in site.data.faq %}
+{% capture secuencia %}{{ secuencia | plus: '1' }}{% endcapture %}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ secuencia }}">
+                    {{ fila.pregunta }} {{ postCount }}
+                </a>
+            </h4>
+        </div>
+        <div id="collapse{{ secuencia }}" class="panel-collapse collapse ">
+            <div class="panel-body">
+                {{ fila.respuesta }}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>

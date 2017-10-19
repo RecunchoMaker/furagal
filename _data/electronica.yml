@@ -1,0 +1,52 @@
+- titulo: Introducción
+  foto: img/elec-010-introduccion.jpg
+  texto: <p>
+         A electrónica da nosa máquina é moi sinxela, porque só necesita placas prefabricadas e conectar algúns cables. Non se necesitan coñecementos avanzados de electrónica nen
+         moito menos, pero sí que é conveniente ter certos coñecementos de electricidade e de soldadura para deixar as conexións externas ben rematadas. Traballaremos con voltaxes
+         relativamente baixos, pero se tes dúbidas, consulta no noso foro ou pide consello a calquera amigo que saiba algo de electricidade.
+         </p>
+- titulo: O Arduino UNO
+  foto: img/elec-020-arduino.jpg
+  texto: <p>
+      Este será o "cerebro" da nosa máquina. E o encargado de interpretar os mensaxes que lle chegan do ordenador para enviarlle aos motores os impulsos necesarios para executar
+      eses movementos. Ao Arduino só terás que conectarlle a saída da fonte de alimentación e a CNC Shield
+         </p>
+- titulo: A CNC shield
+  foto: img/elec-030-shield.jpg
+  texto: 
+      <p>
+      Este compoñente é o encargado da parte da "potencia". O arduino ten un microprocesador do que non sae a suficiente corriente como para motores. Por eso é necesario unha serie
+      de compoñentes que amplifican esta sinal procedente do arduino. Como sería bastante traballo facer este tipo de circuito a man, utiliízase un shield. Esta placa encaixa perfectamente
+      no Arduino UNO e nos proporciona dunha maneira máis ordeada as salidas para os motores paso a paso.
+      </p>
+      <p>
+      Enchufa o CNC Shield ao arduino tendo conta que todos os pines entren a vez, para que non se doblen.
+      </p>
+
+- titulo: Os drivers
+  foto: img/elec-050-alinear3.jpg
+  texto: <p>
+      Como dixemos antes, o arduino envía unha sinal eléctrica que é amplificada para que os motores reciban a suficiente potencia. Desto se encargan os drivers. Hai un para cada eixo. Ademáis
+      de amplificar a corrente, teñen outra función. Fíxate que cada motor ten catro cables (son motores bipolares). Para manexar un motor deste tipo, necesitamos catro sinais. E con tres motores
+      estaríamos en 12 sinais distintas do microprocesador. Esto é un problema porque podemos necesitar máis sinais para que o micro se comunique con outros elementos. Así que o micro o único
+      que envía e o número de pasos que se ten que mover o motor, e a dirección. Soamente dous pins. O driver recibe esta información, e vai secuenciando á saída aos catro cables do motor, 
+      ademáis de amplificala. Si. Todo eso en ese pequeno circuito
+        </p>
+        <p>
+        Polos drivers circula bastante corriente, así que e normal que se quenten. Por eso veñen con uns pequenos disipadores. Primeiro inserta os tres drivers no shield e logo pega os disipadores.
+        </p>
+
+- titulo: Os motores paso a paso
+  foto: img/elec-070-motor2.jpg
+  texto: <p>
+      Os motores paso a paso veñen con un pequeno conector de catro pins. Verás que no CNC Shield veñen indicados os eixos aos que os tes que conectar. Hay tres eixos, X, Y e Z.
+      O sentido no que os insertes non ten importancia, simplemente hará que o motor, para unha orden concreta, xire nun sentido ou noutro, pero van funcionar igualmente. Logo, cando 
+      probes os movementos, podes darlle a volta sen problema se ves que van no sentido contrario.
+         </p>
+
+
+- titulo: E xa est&aacute;!
+  foto: img/elec-150-final.jpg
+  texto: <p>
+      Xa so queda instalar o firmware no arduino, e facer os últimos axustes!
+      </p>

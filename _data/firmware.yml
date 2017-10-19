@@ -1,0 +1,63 @@
+- titulo: Preparando a instalaci&oacute;n
+  foto: img/firm-010-preparando.jpg
+  texto: 
+                    <p>
+                    Chegou o momento da verdade. Imos agora a instalar no arduino o GRBL, o firmware que permite aos programas compatibles comunicarse con maquinaria de control numérico.
+                    Poderiamos escribir un montón sobre GRBL, da súa importancia para o desenvolvemento das impresoras 3d... Poderiamos estar meses. Recoméndoche que leas a estupenda
+                    <a href=https://www.staticboards.es/blog/dominar-motor-paso-a-paso-con-grbl>guia de GRBL</a> que fixo o noso colega recuncheiro Javi, de 
+                    <a href=https://staticboards.com>staticboards.com</a>
+                    </p>
+                    <p>
+                    Aquí se fala de cómo funcionan os motores paso a paso, de qué son os GCODE... e moitas outras cousas que che fara falta coñecer para dominar a túa máquina.
+                    </p>
+
+- titulo: Instalando o firmware
+  foto: img/firm-020-subindo.jpg
+  texto: 
+                    <li>Descarga o GRBL do respositorio oficial en <a href="https://github.com/grbl/grbl">github</a> en formato <strong>zip</strong>. </li>
+                    <li>Conecta o Arduino ao ordenador polo porto USB e abre o Arduino IDE.</li>
+                    <li>Engade o GRBL como librería, desde o menú Sketch->Include library->Add .zip library</li>
+                    <li>Selecciona o exemplo que se che engade automaticamente ao engadir a librería, en File->Examples->Grbl->GrblUpload
+                    <li>Aseg&uacute;rate de seleccionar a placa e o porto correspondiente.</li>
+                    <li>Pincha en <i>Subir</i></li>
+                    </ol>
+
+- titulo: Conect&aacute;ndose a <strong>Furagal</strong>
+  foto: img/firm-030-bcnc.jpg
+  texto: 
+                    <p>
+                      Unha vez instalado o firmware, é o momento de conectarse a FuraGal con algún programa de manexo de CNC. Recomendamosche 
+                      <a href=https://github.com/vlachoudis/bCNC> bCNC </a> un programa completamente libre, feito en Python.
+                    </p>
+                    <p>
+                    Os primeiros pasos cunha máquina CNC poden ser bastante confusos. Para facilitarche un pouco as cousas, no noso repositorio de FuraGal atoparás un ficherio
+                    de configuración para FuraGal, bCNC.ini. <strong>Antes</strong> de arrancar o programa, copia ese ficheiro á carpeta onde o descargaches e terás preconfigurados
+                    os parámetros da máquina.
+                    </p>
+                    <p>
+                    Vaia. Fuche demasiado rápido e xa arrancaches o programa. XD. Non importa, podes machacar o ficheiro de configuración que genera o bCNC a primeira vez que se executa.
+                    Para saber onde o garda (depende do sistema operativo), mira en Tool->Config->User file. 
+                    </p>
+
+- titulo: Configuración de velocidades, aceleracions...
+  foto: img/firm-040-parametros.jpg
+  texto: 
+  texto: 
+     <p>
+     En xeneral, a configuración dunha máquina depende bastante da calidade da construcción, e tamén da calidade que necesites á hora de traballar con ela. Sempre
+     vai a haber un compromiso entre calidade/rapidez. Estes parámetros os terás que ir atopando co tempo, a medida que domines os proceso de fresado. Pero para darche
+     unha idea inicial de cómo podes empezar, estes son os parámetros que temos nos agora na nosa FuraGal.
+     </p>
+
+- titulo: Experimenta, experimenta, experimenta!
+  foto: img/firm-999-fin.jpg
+  texto: 
+                    <p>
+                        ...e ata aquí chegamos! Non dubides en experimentar coa tua máqina e comentarnos calquera problema ou mellora que se che ocurra
+                    </p>
+                    <p>
+                    E recorda que esto é un proxecto de hardware/software libre, que conta contigo para poder mellorar. Cualquera aportaci&oacute;n ser&aacute; benvida
+                    </p>
+                    <p>
+                    Que o esp&iacute;ritu maker os acompa&ntilde;e!
+                    <p>

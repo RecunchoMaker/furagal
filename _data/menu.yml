@@ -1,0 +1,20 @@
+- titulo: Inicio
+  url: index.html
+
+- titulo: Materiais TODO
+  url: materiais.html
+
+- titulo: Construcci&oacute;n TODO
+  url: construccion.html
+  submenu:
+    - titulo: Mec&aacute;nica
+      url: /
+    - titulo: Electr&oacute;nica
+      url : /
+
+- titulo: Firmware
+  url: firmware.html
+
+- titulo: FAQ
+  url: faq.html
+

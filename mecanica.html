@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<h2>Construcci&oacute;n · Parte mec&aacute;nica</h2>
+
+
+{% for fila in site.data.mecanica %}
+<div class="row">
+    {% if fila.larga %}
+    <div class="col-sm-6">
+    {% else %}
+    <div class="col-sm-4">
+    {% endif %}
+        <img src="{{ fila.foto }}" class="img-thumbnail" alt="Responsive image">
+    </div>
+    {% if fila.larga %}
+    <div class="col-sm-6">
+    {% else %}
+    <div class="col-sm-8">
+    {% endif %}
+        <h4>{{ fila.titulo }}</h4>
+        {{ fila.texto }}
+        </p>
+    </div>
+</div>
+{% endfor %}
+

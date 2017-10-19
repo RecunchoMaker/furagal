@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h2>Instalaci&oacute;n do firmware</h2>
+
+
+{% for fila in site.data.firmware %}
+<div class="row">
+    <div class="col-sm-4">
+        {% if fila.codigo %}
+        <pre class="terminal">
+<code>{{ fila.codigo }}</code>
+        </pre>
+        {% else %}
+        <img src="{{ fila.foto }}" class="img-thumbnail" alt="Responsive image">
+        {% endif %}
+    </div>
+    <div class="col-sm-8">
+        <h4>{{ fila.titulo }}</h4>
+        {{ fila.texto }}
+        </p>
+    </div>
+</div>
+{% endfor %}
